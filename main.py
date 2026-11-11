@@ -11,7 +11,7 @@ class CampaignCreate(BaseModel):
 
 class websiteanalysis(BaseModel):
     url: str = Field(..., description="URL of the website to analyze")
-    business_type: str = Field(..., description="Type of business for the website")
+    business_name: str = Field(..., description="Name of the business for the website")
     industry: str = Field(..., description="Industry of the business")
 
 
@@ -66,7 +66,9 @@ def analyze_website(analysis: websiteanalysis):
     return {
         "message": "Website analysis initiated",
         "url": analysis.url,
-        "business_type": analysis.business_type,
+        "business_name": analysis.business_type,
         "industry": analysis.industry,
         "status": "Success"
     }
+
+##This is a simple FastAPI application that provides endpoints for managing digital marketing campaigns and analyzing websites. It includes models for campaign creation and website analysis, along with basic health check and informational endpoints.

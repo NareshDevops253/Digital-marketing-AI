@@ -1,0 +1,24 @@
+body{
+    background-color:white;
+    font-family:Arial, sans-serif;
+    border:1px solid black;
+    border-radius:5px;
+}
+p1{
+    color:blue;
+    font-size:16px;
+    font-family:Verdana, sans-serif;
+    font-style:normal;
+    font-weight:bold;
+    border:1px solid black;
+    text-shadow:  3px 3px 3px gray;
+} 
+h1{
+    color:green;
+    font-size:28px;
+    font-family:Tahoma, sans-serif;
+    font-style:italic;
+    font-weight:normal;
+    border:1px solid rgb(0, 254, 1);
+    text-shadow: 6px 3px 10px gray;
+}
